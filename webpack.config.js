@@ -35,8 +35,8 @@ module.exports = {
             test: /\.html$/,
             loader: 'html-loader'
         }]
+    },
+    sassLoader: {
+        includePaths: ['./src/scss/partials']
     }
-    // sassLoader: {
-    //     includePaths: ['./src/scss/partials','./src/scss/fonts']
-    // }
 };
