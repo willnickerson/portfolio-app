@@ -1,0 +1,20 @@
+@import 'icons';
+
+.footer {
+    background: rgb(70,70,70);
+    padding: 25px 0;
+    ul {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center
+    }
+    li {
+        margin-bottom: 12px;
+    }
+    a {
+        color: lightgray;
+    }
+    span {
+        margin: 0 5px;
+    }
+}

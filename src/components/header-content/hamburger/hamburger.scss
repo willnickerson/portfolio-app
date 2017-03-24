@@ -1,11 +1,21 @@
+$button-width: 60px;                    // The width of the button area
+$button-height: 90px;                   // The height of the button area
+$bar-thickness: 4px;                    // The thickness of the button bars
+$button-pad: 0px;                      // The left/right padding between button area and bars.
+$button-bar-space: 11px;                // The spacing between button bars
+$button-transistion-duration: 0.3s; 
+$button-before: 20px;
+$bar-color: black;
+$background-color: black;
+
 .c-hamburger {
     display: block;
     position: relative;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 96px;
-    height: 96px;
+    width: $button-width;
+    height: $button-height;
     font-size: 0;
     text-indent: -9999px;
     appearance: none;
@@ -23,11 +33,12 @@
 .c-hamburger span {
     display: block;
     position: absolute;
-    top: 44px;
-    left: 18px;
-    right: 18px;
-    height: 8px;
-    background: black;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    height: $bar-thickness;
+    background: $bar-color;
+    border-radius: 5px;
 }
 
 .c-hamburger span::before,
@@ -36,17 +47,18 @@
     display: block;
     left: 0;
     width: 100%;
-    height: 8px;
-    background-color: black;
+    height: $bar-thickness;
+    background-color: $bar-color;
     content: "";
+    border-radius: 5px;
 }
 
 .c-hamburger span::before {
-    top: -20px;
+    top: $button-before;
 }
 
 .c-hamburger span::after {
-    bottom: -20px;
+    bottom: $button-before;
 }
 
 

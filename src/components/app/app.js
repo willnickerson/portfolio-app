@@ -1,5 +1,10 @@
 import template from './app.html';
 
 export default({
-    template
+    template,
+    controller
 });
+
+function controller() {
+    this.backdrop = {};
+}

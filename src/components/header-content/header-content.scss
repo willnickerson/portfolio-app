@@ -1,10 +1,62 @@
+@import 'fonts';
+$site-name-size: 70px;
+
 :local(.container) {
-    width: 90%;
-    h1 {
+    width: 85%;
+    margin: 12% auto;
+    .site-name {
+        border: 3px solid black;
         float: left;
+        text-align: center;
+        width: $site-name-size;
+        height: $site-name-size;
+        // border-radius: 50%;
+        // background-color: grey;
+    }
+    h1 {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); 
+        font-size: 1em;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        // letter-spacing: 20px;
+        font-family: serif;
+        font-weight: 700;
+    }
+    .dash {
+        letter-spacing: 0;
+    }
+    .red {
+        display: block;
+        // text-align: center;
+        // line-height: 0;
+        color: red;
+
     }
     .site-nav {
         float: right;
-        width: 20%;
+    }
+    .hamburger {
+        position: relative;
+        z-index: 10;
+    }
+
+    .custom-side-nav {
+        color: black;
+        max-width: calc(100% - 100px);
+        min-width: calc(100% - 100px);
+        background: white;
+    }
+
+    ul {
+        width: 60%;
+        margin: 20px auto;
+        font-size: 2.5em;
+    }
+
+    li {
+        margin: 10px 0;
     }
 }

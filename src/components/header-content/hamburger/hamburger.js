@@ -8,6 +8,7 @@ export default({
 
 function controller() {
     this.styles = styles;
+    
 
     var toggles = angular.element(document.querySelectorAll('.c-hamburger')); //eslint-disable-line
     console.log(toggles);

@@ -1,13 +1,15 @@
 <div ng-class="$ctrl.styles.container" class="clearfix">
-    <h1>WAN/DEV/PDX</h1>
-    <!--<nav>
-        <ul>
-            <li>about</li>
-            <li>work</li>
-            <li>contact</li>
-        </ul>
-    </nav>-->
+    <div class="site-name">
+        <h1>WAN/<span class="red">PDX<span></h1>
+    </div>
     <div class="site-nav">
-        <hamburger></hamburger>
+        <hamburger class="hamburger" ng-click="$ctrl.toggleNav()"></hamburger>
+        <md-sidenav md-component-id="left" class="md-sidenav-left custom-side-nav" md-disable-backdrop="">
+            <ul>
+                <li>about</li>
+                <li>work</li>
+                <li>contact</li>
+            </ul>
+        </md-sidenav>
     </div>
 </div>
