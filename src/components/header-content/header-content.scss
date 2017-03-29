@@ -4,8 +4,6 @@
 $site-name-size: 55px;
 
 :local(.container) {
-    width: 90%;
-    margin: 12% auto;
     .site-name {
         border: 3px solid black;
         float: left;
@@ -16,6 +14,9 @@ $site-name-size: 55px;
         background-color: transparent;
         // background-image: url('http://res.cloudinary.com/lejipni8p/image/upload/v1490651296/will-book_zq29ya.jpg');
         // background-size: 100%;
+    }
+    .site-name:hover {
+        cursor: pointer;
     }
     h1 {
         position: relative;
@@ -58,5 +59,51 @@ $site-name-size: 55px;
     li {
         margin-top: 5%;
         margin-left: 3%;
+    }
+}
+
+.desktop-site-nav {
+    display: none;
+}
+
+@media all and (min-width: 800px) {
+    :local(.container) {
+        ul {
+            width: 50%;
+        }
+        .site-name {
+            transition: all .35s ease;
+            h1 {
+                transition: all .35s ease;
+            }
+        }
+        .site-name:hover {
+            border-color: $red;
+            color: $red;
+            h1 {
+                color: $red;
+            }
+        }
+
+    }
+    .hamburger {
+        display: none;
+    }
+    .desktop-site-nav {
+        position: relative;
+        bottom: -5px;
+        display: block;
+        float: right;
+        li {
+            float: right;
+            margin-left: 6%;
+            transition: all .3s ease;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+        a:hover {
+            color: $red;
+        }
     }
 }

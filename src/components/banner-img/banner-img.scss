@@ -2,8 +2,6 @@
 
 :local(.banner) {
     position: relative;
-    width: 90%;
-    margin: 0 auto;
     // text-align: center;
     img {
         width: 100%;
@@ -31,5 +29,10 @@
         font-weight: 300;
         border: 2px solid red;
         background-color: transparent;
+    }
+}
+
+@media all and (min-width: 700px) {
+    :local(.banner) {
     }
 }

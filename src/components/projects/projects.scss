@@ -1,4 +1,5 @@
 @import 'fonts';
+@import 'colors';
 
 :local(.projects) {
     h1 {
@@ -15,6 +16,10 @@
         font-family: $serif-font;
         text-indent: 20px;
         font-size: 1.1em;
+    }
+    a {
+        color: $red;
+        font-style: italic;
     }
 }
 
