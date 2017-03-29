@@ -9,21 +9,6 @@ export default({
     controller
 });
 
-controller.$inject = ['$mdSidenav'];
-
-function controller($mdSidenav) {
+function controller() {
     this.styles = styles;
-    this.showNav = true;
-
-    this.toggleNav = () => {
-        $mdSidenav('left').toggle();
-        if(!this.backdrop.hasOwnProperty('background-color')) {
-            console.log('in if');
-            this.backdrop = {'background-color': 'rgba(150,150,150,.7)', 'color':'rgba(0,0,0,.5)'};
-        } else { 
-            console.log('in else');
-            this.backdrop = {};
-        }
-        console.log(this.backdrop);
-    };
 }

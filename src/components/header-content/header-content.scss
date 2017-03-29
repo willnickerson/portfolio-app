@@ -1,8 +1,10 @@
 @import 'fonts';
-$site-name-size: 70px;
+@import 'icons';
+@import 'colors';
+$site-name-size: 55px;
 
 :local(.container) {
-    width: 85%;
+    width: 90%;
     margin: 12% auto;
     .site-name {
         border: 3px solid black;
@@ -10,8 +12,10 @@ $site-name-size: 70px;
         text-align: center;
         width: $site-name-size;
         height: $site-name-size;
-        // border-radius: 50%;
-        // background-color: grey;
+        // border-radius: 3%;
+        background-color: transparent;
+        // background-image: url('http://res.cloudinary.com/lejipni8p/image/upload/v1490651296/will-book_zq29ya.jpg');
+        // background-size: 100%;
     }
     h1 {
         position: relative;
@@ -21,42 +25,38 @@ $site-name-size: 70px;
         margin-top: 0;
         margin-left: 0;
         margin-bottom: 0;
-        // letter-spacing: 20px;
-        font-family: serif;
+        color: black;
+        letter-spacing: 2px;
+        font-family: $serif-font;
         font-weight: 700;
+        line-height: 15px;
     }
     .dash {
         letter-spacing: 0;
     }
     .red {
         display: block;
-        // text-align: center;
-        // line-height: 0;
         color: red;
+        // color: white;
 
     }
     .site-nav {
-        float: right;
+        float: none;
     }
     .hamburger {
-        position: relative;
-        z-index: 10;
+        float: right;
     }
 
-    .custom-side-nav {
-        color: black;
-        max-width: calc(100% - 100px);
-        min-width: calc(100% - 100px);
-        background: white;
-    }
 
     ul {
-        width: 60%;
-        margin: 20px auto;
-        font-size: 2.5em;
+        width: 100%;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: $serif-font;
     }
 
     li {
-        margin: 10px 0;
+        margin-top: 5%;
+        margin-left: 3%;
     }
 }

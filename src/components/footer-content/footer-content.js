@@ -6,4 +6,4 @@ export default {
     controller() {
         this.styles = styles;
     }
-}
+};

@@ -1,11 +1,26 @@
+@import 'fonts';
+
+
 html {
     font-size: 16px;
     font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #222;
 }
 
 body, div, p, img, ul, section {
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: block;
+    border: 5px solid black;
+
+}
+
+img {
+    max-width: 100%;
 }
 
 ul {
@@ -23,7 +38,19 @@ a {
     clear: both;
 }
 
+h1, h2, h3{
+    font-family: $serif-font;
+}
+
 .container {
     width: 90%;
-    margin: 20px auto;
+    margin: 50px auto 50px auto;
+}
+
+hr {
+    border: none;
+    background-color: #AAA;
+    width: 80%;
+    height: 1px;
+    margin: 0 auto;
 }

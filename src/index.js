@@ -1,13 +1,21 @@
 import angular from 'angular';
 import components from './components';
-import ngMaterial from 'angular-material';
+import uiRouter from 'angular-ui-router';
+import routes from './routes';
 import './scss/main.scss';
+import '../vendor/angularSlideables.js';
 
 
 
 
-angular.module('myApp', [
+const app = angular.module('myApp', [
     components,
-    ngMaterial
+    uiRouter,
+    'angularSlideables'
 ]);
+
+app.config(routes);
+
+
+
 

@@ -1,0 +1,26 @@
+@import 'fonts';
+@import 'colors';
+
+:local(.about) {
+    h3 {
+        font-size: 2.7em;
+        margin-bottom: 10px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-family: $serif-font;
+        margin-top: 25px;
+    }
+    h4 {
+        color: $red;
+    }
+    p {
+        margin: 0 auto;
+        font-size: 1.1em;
+        font-family: $serif-font;
+        text-indent: 25px;
+    }
+    a {
+        color: $red;
+        font-style: italic;
+    }
+}
