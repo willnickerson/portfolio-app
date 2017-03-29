@@ -1,0 +1,38 @@
+@import 'fonts';
+
+:local(.banner) {
+    position: relative;
+    // text-align: center;
+    img {
+        width: 100%;
+        display: block;
+        margin: 20px auto;
+    }
+    .text-div {
+        // width: 85%;
+        // margin: 30px auto;
+        font-size: 1.75em;
+        font-weight: bold;
+
+    }
+    button {
+        color: black;
+        display: none;
+        // position: absolute;
+        // bottom: 5%;
+        // left: 15%;
+        width: 90%;
+        letter-spacing: 10px;
+        margin: 0 auto 20px auto;
+        font-size: 2.5em;
+        font-family: $header-font;
+        font-weight: 300;
+        border: 2px solid red;
+        background-color: transparent;
+    }
+}
+
+@media all and (min-width: 700px) {
+    :local(.banner) {
+    }
+}

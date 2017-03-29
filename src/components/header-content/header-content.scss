@@ -1,0 +1,109 @@
+@import 'fonts';
+@import 'icons';
+@import 'colors';
+$site-name-size: 55px;
+
+:local(.container) {
+    .site-name {
+        border: 3px solid black;
+        float: left;
+        text-align: center;
+        width: $site-name-size;
+        height: $site-name-size;
+        // border-radius: 3%;
+        background-color: transparent;
+        // background-image: url('http://res.cloudinary.com/lejipni8p/image/upload/v1490651296/will-book_zq29ya.jpg');
+        // background-size: 100%;
+    }
+    .site-name:hover {
+        cursor: pointer;
+    }
+    h1 {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); 
+        font-size: 1em;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        color: black;
+        letter-spacing: 2px;
+        font-family: $serif-font;
+        font-weight: 700;
+        line-height: 15px;
+    }
+    .dash {
+        letter-spacing: 0;
+    }
+    .red {
+        display: block;
+        color: red;
+        // color: white;
+
+    }
+    .site-nav {
+        float: none;
+    }
+    .hamburger {
+        float: right;
+    }
+
+
+    ul {
+        width: 100%;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: $serif-font;
+    }
+
+    li {
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+}
+
+.desktop-site-nav {
+    display: none;
+}
+
+@media all and (min-width: 800px) {
+    :local(.container) {
+        ul {
+            width: 50%;
+        }
+        .site-name {
+            transition: all .35s ease;
+            h1 {
+                transition: all .35s ease;
+            }
+        }
+        .site-name:hover {
+            border-color: $red;
+            color: $red;
+            h1 {
+                color: $red;
+            }
+        }
+
+    }
+    .hamburger {
+        display: none;
+    }
+    .desktop-site-nav {
+        position: relative;
+        bottom: -5px;
+        display: block;
+        float: right;
+        li {
+            float: right;
+            margin-left: 6%;
+            transition: all .3s ease;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+        a:hover {
+            color: $red;
+        }
+    }
+}

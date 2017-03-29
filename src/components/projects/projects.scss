@@ -1,0 +1,28 @@
+@import 'fonts';
+@import 'colors';
+
+:local(.projects) {
+    h1 {
+        text-align: center;
+        font-size: 3em
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    img {
+        margin-bottom: 15px;
+    }
+    p {
+        font-family: $serif-font;
+        text-indent: 20px;
+        font-size: 1.1em;
+    }
+    a {
+        color: $red;
+        font-style: italic;
+    }
+}
+
+.project {
+    margin-bottom: 30px;
+}

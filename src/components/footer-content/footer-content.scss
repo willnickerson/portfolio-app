@@ -1,0 +1,21 @@
+@import 'icons';
+@import 'fonts';
+
+.footer {
+    padding: 25px 0;
+    ul {
+        margin: 20px auto 0 auto;
+        text-align: center
+    }
+    li {
+        margin-bottom: 12px;
+        font-family: $serif-font;
+        font-size: 1.2em;
+    }
+    a {
+        color: black;
+    }
+    span {
+        margin: 0 5px;
+    }
+}
